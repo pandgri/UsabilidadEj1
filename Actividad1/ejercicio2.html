@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="ejercicio2.css">
+    <title>Formulario</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Formulario</h1>
+      <form>
+        <div class="form-field">
+          <label for="nombre">Nombre <span class="required">*</span> </label>
+          <input type="text" name="nombre" id="nombre" required placeholder="Ingresa tu nombre completo"/>
+        </div>
+
+        <div class="form-field">
+          <label for="email">Correo electrónico <span class="required">*</span> </label>
+          <input type="text" name="email" id="email" required placeholder="nombre@ejemplo.com" pattern="[A-Za-z]*[@][a-z]*.com"/>
+        </div>
+
+        <div class="form-field">
+          <label for="telefono">Teléfono</label>
+          <input type="text" name="telefono" placeholder="123 45 67 89" pattern="[0-9]{3}[ ][0-9]{2}[ ][0-9]{2}[ ][0-9]{2}"/>
+        </div>
+
+        <div class="form-field">
+          <label for="mensaje">Mensaje</label>
+          <textarea name="mensaje" id="mensaje" rows="4" placeholder="Escribe aquí"></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">Enviar</button>
+      </form>
+    </div>
+  </body>
+</html>
